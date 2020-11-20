@@ -7,6 +7,15 @@ $background-color: #A8D0E6;
 $border-color: #F8E9A1;
 
 $global-padding: 15px;
+$font-serif:'Playfair Display',
+serif;
+$font-sans-serif: 'Source Sans Pro',
+sans-serif;
+
+html {
+    color: $primary-color;
+    font-family: $font-serif;
+}
 
 body {
     background-color: $background-color;
@@ -43,6 +52,7 @@ $sizes: (2em, 1.75em, 1.5em, 1.25em, 1em, 0.75em);
 @for $i from 1 through length($sizes) {
     h#{$i} {
         font-size: nth($sizes, $i);
+        font-family: $font-sans-serif;
     }
 }
 
@@ -57,6 +67,8 @@ ul {
         a {
             text-decoration: none;
             color: #000;
+            font-family: $font-sans-serif;
+            font-size: 18px;
 
             &:link {
                 color: blue;
@@ -116,6 +128,7 @@ table {
     th {
         background-color: $secondary-color;
         color: $background-color;
+        font-family: $font-sans-serif;
     }
 
     td {

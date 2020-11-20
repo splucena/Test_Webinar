@@ -1,3 +1,8 @@
+html {
+  color: #24305E;
+  font-family: "Playfair Display", serif;
+}
+
 body {
   background-color: #A8D0E6;
   margin: 0;
@@ -30,26 +35,32 @@ footer {
 
 h1 {
   font-size: 2em;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 h2 {
   font-size: 1.75em;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 h3 {
   font-size: 1.5em;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 h4 {
   font-size: 1.25em;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 h5 {
   font-size: 1em;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 h6 {
   font-size: 0.75em;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 ul li {
@@ -58,6 +69,8 @@ ul li {
 ul li a {
   text-decoration: none;
   color: #000;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
 }
 ul li a:link {
   color: blue;
@@ -106,6 +119,7 @@ table {
 table th {
   background-color: #374785;
   color: #A8D0E6;
+  font-family: "Source Sans Pro", sans-serif;
 }
 table td {
   border-bottom: 1px solid #374785;
