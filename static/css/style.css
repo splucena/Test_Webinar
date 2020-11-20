@@ -1,0 +1,118 @@
+body {
+  background-color: #A8D0E6;
+  margin: 0;
+}
+
+.banner {
+  padding: 15px;
+}
+
+nav {
+  background-color: #24305E;
+  color: #A8D0E6;
+  padding: 15px;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+}
+
+main {
+  padding: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+}
+
+.blue {
+  color: blue;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
+ul li {
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+  color: #000;
+}
+ul li a:link {
+  color: blue;
+}
+ul li a:visited {
+  color: #FFF;
+}
+ul li a:hover {
+  color: green;
+}
+ul li a:active {
+  color: red;
+}
+
+.font-lg {
+  font-size: 20px;
+}
+
+.center-div {
+  border: solid 1px #000;
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 0 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+}
+.container p,
+.container li {
+  text-indent: 1em;
+}
+
+table {
+  border-collapse: collapse;
+  color: #24305E;
+  width: 100%;
+}
+table th {
+  background-color: #374785;
+  color: #A8D0E6;
+}
+table td {
+  border-bottom: 1px solid #374785;
+}
+table th,
+table td {
+  padding: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

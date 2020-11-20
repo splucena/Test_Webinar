@@ -1,0 +1,94 @@
+Sass is a stylesheet language that is an extension of CSS.
+Sass is a preprocessor. It takes Sass (.sass) or SCSS (.scss) files as
+input, and outputs CSS files (.css).
+
+Variables
+$variable: 42px;
+
+Creating meaningful Variables
+$brand-color: #000;
+$global-spacing: 10px;
+$gold: hsl(42, 78%, 54%);
+$dark-blue: rgb(13, 33, 70);
+$primary-theme-color: $gold;
+$secondary-theme-color: $dark-blue;
+
+DataTypes
+string 'hello'
+number 1
+color #000
+lists (1, 'kittens')
+map ('info': deepbluesky)
+bool true/false
+null
+
+Functions
+a function is a chunk of code that returns a result
+
+A parameter is the variable that’s part of the function’s signature (function declaration). 
+An argument is an expression used when calling the function
+
+@function multiply($a, $b) {
+    @return ($a * $b);
+}
+
+Mixins
+mixin is a function that can output code rather than return
+a result.
+
+@mixin center {
+ width: 100%;
+ max-width: 1180px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.container {
+ @include center;
+}
+
+Loops and Conditions
+
+Conditions
+             
+$number: 42;
+.foo {
+ @if ($number > 1337) {
+ content: 'Value is greater than 1337px.';
+ } @else if ($number >= 0) {
+ content: 'Value is between 0 and 1337.'
+ } @else {
+ content: 'Value is lower than 0.';
+ }
+}
+
+For Loops// Using direct numbers and `through`
+@for $i from 1 through 5 {
+ // Code to execute 5 times, where `$i` equals:
+ // 1
+ // 2
+ // 3
+ // 4
+ // 5
+}
+
+
+$sizes: (2em, 1.75em, 1.5em, 1.25em, 1em, 0.75em);
+@for $i from 1 through length($sizes) {
+ h#{$i} {
+ font-size: nth($sizes, $i);
+ }
+}
+
+Nesting
+
+.container {
+ margin: 0 auto;
+ max-width: 42em;
+ padding: 0 1em;
+ p, li {
+ text-indent: 1em;
+ }
+}
+
+

@@ -1,0 +1,129 @@
+$color_blue: blue;
+
+$primary-color: #24305E;
+$secondary-color: #374785;
+$tertiary-color: #F76C6C;
+$background-color: #A8D0E6;
+$border-color: #F8E9A1;
+
+$global-padding: 15px;
+
+body {
+    background-color: $background-color;
+    margin: 0;
+}
+
+.banner {
+    padding: $global-padding;
+}
+
+nav {
+    background-color: $primary-color;
+    color: $background-color;
+    padding: $global-padding;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+
+main {
+    padding: $global-padding;
+}
+
+footer {
+    text-align: center;
+    padding: $global-padding;
+}
+
+.blue {
+    color: $color_blue;
+}
+
+$sizes: (2em, 1.75em, 1.5em, 1.25em, 1em, 0.75em);
+
+@for $i from 1 through length($sizes) {
+    h#{$i} {
+        font-size: nth($sizes, $i);
+    }
+}
+
+@function multiply($a, $b) {
+    @return ($a * $b);
+}
+
+ul {
+    li {
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+            color: #000;
+
+            &:link {
+                color: blue;
+            }
+
+            &:visited {
+                color: #FFF;
+            }
+
+            &:hover {
+                color: green;
+            }
+
+            &:active {
+                color: red;
+            }
+        }
+    }
+}
+
+.font-lg {
+    font-size: multiply(5, 4px);
+}
+
+@mixin center {
+    border: solid 1px #000;
+    width: 100%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-div {
+    @include center;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 0 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: $global-padding;
+
+    p,
+    li {
+        text-indent: 1em;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    color: $primary-color;
+    width: 100%;
+
+    th {
+        background-color: $secondary-color;
+        color: $background-color;
+    }
+
+    td {
+        border-bottom: 1px solid $secondary-color;
+    }
+
+    th,
+    td {
+        padding: $global-padding;
+    }
+}
